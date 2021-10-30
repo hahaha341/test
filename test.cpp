@@ -40,7 +40,7 @@ int Add_Sub_Multi_Divid_Choose(){
 	return a;
 }
 string Transform_Int_String(int a){
-	string t;
+	string t1;
 	char save[20];
 	int n=0;
 	while(a>0){
@@ -49,12 +49,12 @@ string Transform_Int_String(int a){
 		save[n++]='0'+i;
 	}
 	for(int i=n-1;i>=0;i--){
-		t+=save[i];
+		t1+=save[i];
 	}
-	return t;
+	return t1;
 }
 string Transform_Double_String(double a){
-	string t;
+	string t2;
 	char save[20];
 	int n=0;
 	int b=a*100;
@@ -70,9 +70,9 @@ string Transform_Double_String(double a){
 		}
 	}
 	for(int i=n-1;i>=0;i--){
-		t+=save[i];
+		t2+=save[i];
 	}
-	return t;
+	return t2;
 }
 char Get_Sign_low(int a){
 	if(a==0)return '+';
